@@ -9,6 +9,11 @@ import ListaAlunos from "./components/repeticao/ListaAlunos";
 import TabelaProdutos from "./components/repeticao/TabelaProdutos";
 import ParOuImpar from "./components/condicional/ParOuImpar";
 import UsuarioInfo from "./components/condicional/UsuarioInfo";
+import DiretaPai from "./components/comunicacao/DiretaPai";
+import IndiretaPai from "./components/comunicacao/IndiretaPai";
+import Input from "./components/formulario/input";
+import Contador from "./components/contador/Contador";
+import Mega from "./components/mega/Mega";
 
 import Card from "./components/layout/Card";
 
@@ -17,6 +22,21 @@ export default () => (
     <h1>Fundamentos React</h1>
 
     <div className="Cards">
+      <Card titulo="#13 - Mega" color="#424242">
+        <Mega qtde={7} />
+      </Card>
+      <Card titulo="#12 - Contador" color="#424242">
+        <Contador numeroInicial={10} />
+      </Card>
+      <Card titulo="#11 - Componente Controlado (Input)" color="#E45F56">
+        <Input />
+      </Card>
+      <Card titulo="#10 - Comunicação indireta" color="#8BAD39">
+        <IndiretaPai />
+      </Card>
+      <Card titulo="#09 - Comunicação direta" color="#59323C">
+        <DiretaPai />
+      </Card>
       <Card titulo="#08 - Renderização condicional" color="#982395">
         <ParOuImpar numero={20} />
         {/* <UsuarioInfo usuario={{ nome: "Fernando" }} /> */}
